@@ -3,7 +3,8 @@
   "package": "net.nullcoil.paritem.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "HopperBlockEntityMixin"
+    "HopperBlockEntityMixin",
+    "BlockStateBaseAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

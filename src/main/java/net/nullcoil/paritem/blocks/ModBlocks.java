@@ -99,6 +99,8 @@ public class ModBlocks {
                 (state, props) -> new WeatheringLanternBlock(state, props),
                 ws -> BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_LANTERN.weathering().unaffected()).lightLevel(x -> 0));
 
+        // Copper Fire registers minecraft:copper_campfire (backed by Prometheus' copper fire type),
+        // so skip ours to avoid two copper campfires with overlapping recipes.
         COPPER_CAMPFIRE = ModCompat.COPPER_FIRE ? null : registerBlock(
                 "copper_campfire",
                 props -> new CampfireBlock(false, 1, props),

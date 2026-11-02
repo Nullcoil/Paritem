@@ -3,6 +3,21 @@ plugins {
 	id 'maven-publish'
 }
 
+repositories {
+	// Modrinth's Maven, for optional compat targets
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -10,6 +25,11 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Lanterns Belong on Walls: compile against it only, it is NOT a required dependency.
+	compileOnly "maven.modrinth:lanterns-bow:${project.lanterns_bow_version}"
+	// Uncomment to have it in the dev client for testing:
+	// localRuntime "maven.modrinth:lanterns-bow:${project.lanterns_bow_version}"
 }
 
 processResources {

@@ -1,0 +1,88 @@
+{
+  "values": [
+    "paritem:unlit_lantern",
+    "paritem:redstone_lantern",
+    "paritem:redstone_unlit_lantern",
+    "paritem:lava_lantern",
+    "paritem:lava_unlit_lantern",
+    "paritem:gold_chain",
+    "paritem:gold_bars",
+    "paritem:gold_door",
+    "paritem:gold_trapdoor",
+    "paritem:netherite_chain",
+    "paritem:netherite_bars",
+    "paritem:netherite_door",
+    "paritem:netherite_trapdoor",
+    "paritem:gold_hopper",
+    "paritem:netherite_hopper",
+    "paritem:reinforced_weighted_pressure_plate",
+    "paritem:copper_unlit_lantern",
+    "paritem:exposed_copper_unlit_lantern",
+    "paritem:weathered_copper_unlit_lantern",
+    "paritem:oxidized_copper_unlit_lantern",
+    "paritem:waxed_copper_unlit_lantern",
+    "paritem:waxed_exposed_copper_unlit_lantern",
+    "paritem:waxed_weathered_copper_unlit_lantern",
+    "paritem:waxed_oxidized_copper_unlit_lantern",
+    "paritem:copper_hopper",
+    "paritem:exposed_copper_hopper",
+    "paritem:weathered_copper_hopper",
+    "paritem:oxidized_copper_hopper",
+    "paritem:waxed_copper_hopper",
+    "paritem:waxed_exposed_copper_hopper",
+    "paritem:waxed_weathered_copper_hopper",
+    "paritem:waxed_oxidized_copper_hopper",
+    "paritem:weighted_pressure_plate",
+    "paritem:exposed_weighted_pressure_plate",
+    "paritem:weathered_weighted_pressure_plate",
+    "paritem:oxidized_weighted_pressure_plate",
+    "paritem:waxed_weighted_pressure_plate",
+    "paritem:waxed_exposed_weighted_pressure_plate",
+    "paritem:waxed_weathered_weighted_pressure_plate",
+    "paritem:waxed_oxidized_weighted_pressure_plate",
+    {
+      "id": "walllanterns:wall_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_redstone_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_lava_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_waxed_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_exposed_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_waxed_exposed_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_weathered_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_waxed_weathered_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_oxidized_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_waxed_oxidized_copper_unlit_lantern",
+      "required": false
+    }
+  ]
+}
