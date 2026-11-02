@@ -1,0 +1,14 @@
+accessWidener v2 official
+
+accessible field net/minecraft/world/level/block/entity/BlockEntityType validBlocks Ljava/util/Set;
+
+accessible field net/minecraft/world/level/block/entity/CampfireBlockEntity cookingProgress [I
+accessible field net/minecraft/world/level/block/entity/CampfireBlockEntity cookingTime [I
+accessible field net/minecraft/world/level/block/LanternBlock SHAPE_HANGING Lnet/minecraft/world/phys/shapes/VoxelShape;
+accessible field net/minecraft/world/level/block/LanternBlock SHAPE_STANDING Lnet/minecraft/world/phys/shapes/VoxelShape;
+accessible field net/minecraft/world/level/block/entity/HopperBlockEntity cooldownTime I
+accessible method net/minecraft/world/level/block/entity/HopperBlockEntity isOnCooldown ()Z
+accessible method net/minecraft/world/level/block/entity/HopperBlockEntity setCooldown (I)V
+accessible method net/minecraft/world/level/block/entity/HopperBlockEntity inventoryFull ()Z
+accessible method net/minecraft/world/level/block/state/properties/BlockSetType register (Lnet/minecraft/world/level/block/state/properties/BlockSetType;)Lnet/minecraft/world/level/block/state/properties/BlockSetType;
+

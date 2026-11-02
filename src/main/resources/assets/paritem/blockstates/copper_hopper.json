@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "paritem:block/copper_hopper"
+    },
+    "facing=east": {
+      "model": "paritem:block/copper_hopper_side",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "paritem:block/copper_hopper_side"
+    },
+    "facing=south": {
+      "model": "paritem:block/copper_hopper_side",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "paritem:block/copper_hopper_side",
+      "y": 270
+    }
+  }
+}

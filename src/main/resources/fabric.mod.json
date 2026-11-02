@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "paritem",
+	"version": "${version}",
+	"name": "Paritem",
+	"description": "Adds parity across metals",
+	"authors": [
+		"Nullcoil"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/paritem",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/paritem/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nullcoil.paritem.Paritem"
+		],
+		"client": [
+			"net.nullcoil.paritem.ParitemClient"
+		]
+	},
+	"mixins": [
+		"paritem.mixins.json"
+	],
+	"accessWidener": "paritem.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

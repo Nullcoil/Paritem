@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": "paritem:netherite_nugget",
+    "B": "minecraft:lava_bucket"
+  },
+  "pattern": [
+    "NNN",
+    "NBN",
+    "NNN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "paritem:lava_lantern"
+  }
+}

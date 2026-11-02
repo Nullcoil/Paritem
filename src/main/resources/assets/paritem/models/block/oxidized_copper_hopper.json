@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/hopper",
+    "textures": {
+        "particle": "paritem:block/oxidized_copper_hopper_outside",
+        "top": "paritem:block/oxidized_copper_hopper_top",
+        "side": "paritem:block/oxidized_copper_hopper_outside",
+        "inside": "paritem:block/oxidized_copper_hopper_inside"
+    }
+}

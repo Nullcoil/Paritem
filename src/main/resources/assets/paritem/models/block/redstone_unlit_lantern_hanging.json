@@ -1,0 +1,7 @@
+{
+  "parent": "paritem:block/unlit_lantern_hanging_template",
+  "textures": {
+    "lantern": "paritem:block/redstone_unlit_lantern",
+    "particle": "#lantern"
+  }
+}

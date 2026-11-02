@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "paritem:redstone_unlit_lantern",
+    "minecraft:redstone_torch"
+  ],
+  "result": {
+    "id": "paritem:redstone_lantern",
+    "count": 1
+  }
+}

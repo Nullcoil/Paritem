@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "minecraft:redstone_torch",
+    "P": "minecraft:carved_pumpkin"
+  },
+  "pattern": [
+    "P",
+    "R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "paritem:redstone_jack_o_lantern"
+  }
+}

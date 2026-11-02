@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "power=0": {
+      "model": "paritem:block/weathered_weighted_pressure_plate"
+    },
+    "power=1": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=10": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=11": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=12": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=13": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=14": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=15": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=2": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=3": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=4": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=5": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=6": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=7": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=8": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    },
+    "power=9": {
+      "model": "paritem:block/weathered_weighted_pressure_plate_down"
+    }
+  }
+}

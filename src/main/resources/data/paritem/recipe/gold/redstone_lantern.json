@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "minecraft:gold_nugget",
+    "R": "minecraft:redstone_torch"
+  },
+  "pattern": [
+    "III",
+    "IRI",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "paritem:redstone_lantern"
+  }
+}

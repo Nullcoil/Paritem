@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "paritem:block/exposed_copper_unlit_lantern"
+    },
+    "hanging=true": {
+      "model": "paritem:block/exposed_copper_unlit_lantern_hanging"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": "minecraft:copper_torch",
+    "P": "minecraft:carved_pumpkin"
+  },
+  "pattern": [
+    "P",
+    "C"
+  ],
+  "result": {
+    "count": 1,
+    "id": "paritem:copper_jack_o_lantern"
+  }
+}

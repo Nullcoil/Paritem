@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "paritem:unlit_lantern",
+    "minecraft:soul_torch"
+  ],
+  "result": {
+    "id": "minecraft:soul_lantern",
+    "count": 1
+  }
+}

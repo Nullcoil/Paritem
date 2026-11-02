@@ -1,0 +1,7 @@
+{
+  "parent": "paritem:block/unlit_lantern_template",
+  "textures": {
+    "lantern": "paritem:block/weathered_copper_unlit_lantern",
+    "particle": "#lantern"
+  }
+}

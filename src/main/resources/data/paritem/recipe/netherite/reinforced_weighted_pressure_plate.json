@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "minecraft:netherite_ingot"
+  },
+  "pattern": [
+    "II"
+  ],
+  "result": {
+    "count": 1,
+    "id": "paritem:reinforced_weighted_pressure_plate"
+  }
+}

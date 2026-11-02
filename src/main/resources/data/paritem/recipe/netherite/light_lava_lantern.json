@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "paritem:lava_unlit_lantern",
+    "minecraft:lava_bucket"
+  ],
+  "result": {
+    "id": "paritem:lava_lantern",
+    "count": 1
+  }
+}

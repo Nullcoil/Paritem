@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "paritem:oxidized_copper_unlit_lantern",
+    "minecraft:copper_torch"
+  ],
+  "result": {
+    "id": "minecraft:oxidized_copper_lantern",
+    "count": 1
+  }
+}

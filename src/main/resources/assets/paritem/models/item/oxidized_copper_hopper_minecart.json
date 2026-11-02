@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "paritem:item/oxidized_copper_hopper_minecart"
+  }
+}

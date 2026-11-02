@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "paritem:item/copper_hopper"
+  }
+}

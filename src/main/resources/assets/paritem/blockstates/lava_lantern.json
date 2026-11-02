@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "paritem:block/lava_lantern"
+    },
+    "hanging=true": {
+      "model": "paritem:block/lava_lantern_hanging"
+    }
+  }
+}

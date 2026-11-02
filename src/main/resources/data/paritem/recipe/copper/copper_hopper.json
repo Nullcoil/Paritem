@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "minecraft:copper_ingot",
+    "C": "minecraft:chest",
+    "R": "minecraft:comparator"
+  },
+  "pattern": [
+    "IRI",
+    "ICI",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "paritem:copper_hopper"
+  }
+}
