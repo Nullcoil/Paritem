@@ -183,7 +183,7 @@ public class CopperHopperMinecart extends ParitemAbstractMinecart {
             if (this.isWaxed()) {
                 if (!this.level().isClientSide()) {
                     this.setWaxed(false);
-                    this.playSound(SoundEvents.AXE_WAX_OFF.value(), 1.0F, 1.0F);
+                    this.playSound(SoundEvents.AXE_WAX_OFF, 1.0F, 1.0F);
                     this.level().levelEvent(this, 3004, this.blockPosition(), 0);
                     this.setWaxed(false);
                     this.nextWeatheringTick = UNSET;
@@ -193,7 +193,7 @@ public class CopperHopperMinecart extends ParitemAbstractMinecart {
             } else if (this.getWeatherState() != WeatherState.UNAFFECTED) {
                 if (!this.level().isClientSide()) {
                     this.setWeatherState(this.getWeatherState().previous());
-                    this.playSound(SoundEvents.AXE_SCRAPE.value(), 1.0F, 1.0F);
+                    this.playSound(SoundEvents.AXE_SCRAPE, 1.0F, 1.0F);
                     this.level().levelEvent(this, 3005, this.blockPosition(), 0);
                     stack.hurtAndBreak(1, player, hand.asEquipmentSlot());
                 }
