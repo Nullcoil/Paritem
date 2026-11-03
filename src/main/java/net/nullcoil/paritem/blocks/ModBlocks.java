@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.entity.BlockEntityTypes;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.nullcoil.paritem.Paritem;
+import net.nullcoil.paritem.compat.ModCompat;
 import net.nullcoil.paritem.blocks.custom.RedstoneCampfireBlock;
 import net.nullcoil.paritem.blocks.custom.RedstoneJackOLantern;
 import net.nullcoil.paritem.blocks.custom.lanterns.RedstoneLantern;
@@ -38,7 +39,7 @@ public class ModBlocks {
     public static final Block REDSTONE_UNLIT_LANTERN; // Unlit variant of Gold Lantern
     public static final Block UNLIT_LANTERN;          // Unlit variant of iron lanterns (regular and soul)
     public static final WeatheringCopperCollection<Block> COPPER_UNLIT_LANTERN; // Unlit variant of copper lanterns
-    public static final Block COPPER_CAMPFIRE;
+    public static final Block COPPER_CAMPFIRE;        // null when Copper Fire (Crystal Nest) is loaded; it provides its own
     public static final Block REDSTONE_CAMPFIRE;      // Redstone variant of campfire
     public static final Block SOUL_JACKOLANTERN;      // Soul variant of Jack O'Lantern
     public static final Block COPPER_JACKOLANTERN;    // Copper variant of Jack O'Lantern
@@ -98,7 +99,9 @@ public class ModBlocks {
                 (state, props) -> new WeatheringLanternBlock(state, props),
                 ws -> BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_LANTERN.weathering().unaffected()).lightLevel(x -> 0));
 
-        COPPER_CAMPFIRE = registerBlock(
+        // Copper Fire registers minecraft:copper_campfire (backed by Prometheus' copper fire type),
+        // so skip ours to avoid two copper campfires with overlapping recipes.
+        COPPER_CAMPFIRE = ModCompat.COPPER_FIRE ? null : registerBlock(
                 "copper_campfire",
                 props -> new CampfireBlock(false, 1, props),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.CAMPFIRE));
@@ -239,7 +242,11 @@ public class ModBlocks {
     }
 
     public static void register() {
-        BlockEntityTypes.CAMPFIRE.addValidBlock(COPPER_CAMPFIRE);
+        if (COPPER_CAMPFIRE != null) {
+            BlockEntityTypes.CAMPFIRE.addValidBlock(COPPER_CAMPFIRE);
+        } else {
+            Paritem.LOGGER.info("Copper Fire detected; skipping Paritem's copper campfire.");
+        }
 
         OxidizableBlocksRegistry.registerWeatheringCopperBlocks(COPPER_HOPPER);
         OxidizableBlocksRegistry.registerWeatheringCopperBlocks(COPPER_UNLIT_LANTERN);
@@ -270,7 +277,11 @@ public class ModBlocks {
                     addWeatheringSet(entries, Items.COPPER_LANTERN.waxed().oxidized(), COPPER_UNLIT_LANTERN);
 
                     // Campfires
-                    entries.insertAfter(Items.SOUL_CAMPFIRE, COPPER_CAMPFIRE, REDSTONE_CAMPFIRE);
+                    if (COPPER_CAMPFIRE != null) {
+                        entries.insertAfter(Items.SOUL_CAMPFIRE, COPPER_CAMPFIRE, REDSTONE_CAMPFIRE);
+                    } else {
+                        entries.insertAfter(Items.SOUL_CAMPFIRE, REDSTONE_CAMPFIRE);
+                    }
 
                     // Jack o' Lanterns
                     entries.insertAfter(Items.JACK_O_LANTERN, SOUL_JACKOLANTERN, COPPER_JACKOLANTERN, REDSTONE_JACKOLANTERN);

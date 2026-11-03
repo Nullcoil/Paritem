@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "paritem:copper_campfire",
+      "required": false
+    },
+    "paritem:redstone_campfire",
+    "paritem:soul_jack_o_lantern",
+    "paritem:copper_jack_o_lantern",
+    "paritem:redstone_jack_o_lantern"
+  ]
+}

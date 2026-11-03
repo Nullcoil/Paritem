@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "walllanterns:wall_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_redstone_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_lava_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_waxed_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_exposed_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_waxed_exposed_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_weathered_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_waxed_weathered_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_oxidized_copper_unlit_lantern",
+      "required": false
+    },
+    {
+      "id": "walllanterns:wall_waxed_oxidized_copper_unlit_lantern",
+      "required": false
+    }
+  ]
+}
